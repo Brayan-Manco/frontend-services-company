@@ -1,15 +1,8 @@
-/* card.component.scss */
-.card {
-  margin-bottom: 1rem; /* Espaciado inferior entre tarjetas */
-  border: 1px solid #ddd;
-  border-radius: 0.25rem;
+.body_content {
+  transition: margin-left 0.3s ease; /* Transición suave cuando se mueve */
+  margin-left: 55px; /* Estado inicial con la barra lateral cerrada */
 }
 
-.card-img-top {
-  width: 100%;
-  height: auto; /* Mantiene la proporción de la imagen */
-}
-
-.card-body {
-  padding: 1.25rem;
+.body_content_shifted {
+  margin-left: 250px; /* Ajusta el valor según el ancho de tu barra lateral */
 }
