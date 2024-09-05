@@ -1,0 +1,19 @@
+<!-- sidebar.component.html -->
+<div class="sidebar" [ngClass]="{'open': isSidebarOpen}">
+  <div class="sidebar-content">
+    <ul class="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link" (click)="toggleSidebar()">☰</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-file"></i> <span class="nav-text"> About</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-cogs"></i> <span class="nav-text"> Services</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-envelope"></i> <span class="nav-text"> Contact</span></a>
+      </li>
+    </ul>
+  </div>
+</div>

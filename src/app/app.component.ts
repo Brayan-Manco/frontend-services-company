@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SideBarService } from './shared/components/side-bar/side-bar.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'quipux-prueba-tecnica-frontend';
+  isSidebarOpen!: boolean;
+
+  constructor(private sidebarService: SideBarService) {
+    this.sidebarService.isSidebarOpen$.subscribe(state => this.isSidebarOpen = state);
+  }
 }

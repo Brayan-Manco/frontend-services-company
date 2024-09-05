@@ -1,0 +1,15 @@
+/* card.component.scss */
+.card {
+  margin-bottom: 1rem; /* Espaciado inferior entre tarjetas */
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.card-body {
+  padding: 1.25rem;
+}

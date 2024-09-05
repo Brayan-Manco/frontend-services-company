@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+.content {
+  margin-left: 80px; /* Ajusta esto según el ancho del sidebar cuando está cerrado */
+  padding: 20px;
+}
+
+@media (min-width: 769px) {
+  .content {
+    margin-left: 250px; /* Ajusta esto según el ancho del sidebar cuando está abierto */
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0; /* Eliminar margen en pantallas más pequeñas */
+  }
+}
