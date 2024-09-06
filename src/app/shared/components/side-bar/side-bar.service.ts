@@ -19,4 +19,5 @@ export class SideBarService {
   setSidebarState(isOpen: boolean) {
     this.sidebarOpen.next(isOpen);
   }
+
 }

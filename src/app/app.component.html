@@ -1,7 +1,8 @@
 <app-side-bar></app-side-bar>
 <div class="body_content" [ngClass]="{'body_content_shifted': isSidebarOpen , 'hidden-on-mobile': isSidebarOpen && isMobile}">
   <app-header></app-header>
-  <div class="p-3 h-full">
+  <div class="p-3">
     <router-outlet name="page"></router-outlet>
   </div>
+  <app-footer></app-footer>
 </div>

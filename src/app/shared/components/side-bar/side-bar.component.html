@@ -2,17 +2,35 @@
   <div class="sidebar-content">
     <ul class="sidebar-nav">
       <li class="nav-item">
-        <a class="nav-link" (click)="toggleSidebar()">☰</a>
+        <a class="nav-link" (click)="toggleSidebar()">☰<span class="nav-text" style="margin-left: 70%;"> QUIPUX </span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/company" href="#"><i class="fas fa-file"></i> <span class="nav-text"> Empresa</span></a>
+      <li class="nav-item dropdown" >
+        <a class="nav-link" (click)="toggleDropdown()">
+          <i class="fas fa-building"></i><span class="nav-text"> EMPRESA</span>
+        </a>
+        <ul class="dropdown-menu" *ngIf="isOpenCompanyBotton">
+          <li><a style="color: white;" routerLink="/company"> --Empresas</a></li>
+        </ul>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-cogs"></i> <span class="nav-text"> Services</span></a>
+      <li class="nav-item dropdown" (click)="toggleDropdownArt()">
+        <a class="nav-link">
+          <i class="fas fa-file-alt"></i> <span class="nav-text"> ARTÍCULOS</span>
+        </a>
+        <ul class="dropdown-menu" *ngIf="isOpenArticleBotton">
+          <li><a routerLink="/articles" style="color: white;"> --Articulos</a></li>
+        </ul>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-envelope"></i> <span class="nav-text"> Contact</span></a>
+      <li class="nav-item dropdown" (click)="toggleDropdownColl()">
+        <a class="nav-link">
+          <i class="fas fa-user"></i> <span class="nav-text"> COLABORADOR</span>
+        </a>
+        <ul class="dropdown-menu" *ngIf="isOpenColaboBotton">
+          <li><a routerLink="/company/about" style="color: white;"> --Colaboradores</a></li>
+        </ul>
       </li>
     </ul>
+
+
+
   </div>
 </div>

@@ -1,21 +1,20 @@
-/* sidebar.component.scss */
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  width: 80px; /* Ancho reducido cuando está cerrado */
+  width: 80px;
   background-color: #343a40;
   color: white;
   overflow-x: hidden;
   transition: width 0.3s ease, transform 0.3s ease;
-  transform: translateX(-25px); /* Oculto por defecto */
+  transform: translateX(-25px);
   z-index: 1000;
 }
 
 .sidebar.open {
-  width: 250px; /* Ancho completo cuando está abierto */
-  transform: translateX(0); /* Mostrar cuando está abierto */
+  width: 250px;
+  transform: translateX(0);
 }
 
 .sidebar-content {
@@ -40,15 +39,15 @@
 }
 
 .sidebar-nav .nav-link i {
-  margin-right: 10px; /* Espacio entre icono y texto */
+  margin-right: 10px;
 }
 
 .sidebar-nav .nav-text {
-  display: none; /* Ocultar texto cuando está cerrado */
+  display: none;
 }
 
 .sidebar.open .nav-text {
-  display: inline; /* Mostrar texto cuando está abierto */
+  display: inline;
 }
 
 .btn-close, .btn-menu {
@@ -61,4 +60,10 @@
   font-size: 20px;
   cursor: pointer;
 }
+
+.dropdown-menu {
+  display: block;
+  background-color: #343a40;
+}
+
 
