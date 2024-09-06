@@ -10,4 +10,5 @@ export class PageArticlesComponent {
   public contact = contactData;
 
   public articles = articles;
+
 }

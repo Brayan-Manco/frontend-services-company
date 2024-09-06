@@ -6,26 +6,34 @@
   border: none;
 }
 
-
-.my-flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+.width-card {
+  height: 100px;
+  width: 10px;
 }
 
-.card-border-left {
-  border-left: 2px solid #90959b;
-  padding-right: 5px;
+.custom-border-radius {
+  border-radius: 50%;
 }
 
-@media (max-width: 768px) {
-  .my-flex-container {
-    display: block;
-  }
 
-  .card-border-left {
-    border-left: none;;
-  }
+.card {
+  border-radius: 10px;
 }
+
+.custom-border-radius {
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 5px;
+}
+
+.scrollable-container {
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* border: 1px solid #ddd; */
+  padding: 10px;
+}
+
 
