@@ -1,0 +1,65 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card no-border">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">INFORMACION DE LA EMPRESA</h5><br>
+          <div class="text-center">
+            <p> <span class="custom-bold">Nombre</span><br> {{company.name}}</p>
+          </div>
+          <div class="text-center">
+            <p> <span class="custom-bold">Fecha de creación</span><br> {{company.date}}</p>
+          </div>
+          <div class="text-center">
+            <p> <span class="custom-bold">Dirección</span><br> {{company.address}}</p>
+          </div>
+          <div class="text-center">
+            <p>{{company.city}}</p>
+          </div>
+          <div class="text-center">
+            <p> <span class="custom-bold">Número de teléfonos</span><br></p>
+            <p> <span>Fijo</span><br> {{company.fijo}} <br> <span>Fax</span><br> {{company.fax}}</p>
+          </div>
+          <div class="text-center">
+            <p> <span class="custom-bold">Sitio Web</span><br> <a href="">{{company.web}}</a> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-8 mb-4 my-flex-container bg-white">
+      <div class="card no-border">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">INFORMACIÓN DEL CONTACTO</h5><br>
+          <div class="text-center">
+            <p> <span class="custom-bold">Dirección</span><br> {{contact.address}}</p>
+          </div><br>
+          <div class="text-center">
+            <p> <span class="custom-bold">Correo electrónico</span><br> {{contact.email}}</p>
+          </div><br>
+          <div class="text-center">
+            <p> <span class="custom-bold">Sitio Web</span><br> <a href="">{{contact.web}}</a> </p>
+          </div><br>
+          <div class="text-center">
+            <p> <span class="custom-bold">Red social</span>
+            <p>{{contact.inst}}<br>{{contact.link}}</p>
+          </div><br><br><br><br><br>
+        </div>
+      </div>
+      <div class="card no-border card-border-left">
+        <div class="card-body"><br>
+          <div class="text-center">
+            <p> <span class="custom-bold">Dirección de correspondencia de correo</span><br> {{contact.email_address }}</p>
+          </div><br>
+          <div class="text-center">
+            <p> <span class="custom-bold">Número de teléfonos</span><br></p>
+            <p> <span>Fijo</span><br> {{contact.fijo}} <br> <span>Celular</span><br> {{contact.cel}}</p>
+          </div><br><br><br>
+          <br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

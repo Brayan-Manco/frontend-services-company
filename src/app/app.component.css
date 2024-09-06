@@ -1,8 +1,17 @@
 .body_content {
-  transition: margin-left 0.3s ease; /* Transición suave cuando se mueve */
-  margin-left: 55px; /* Estado inicial con la barra lateral cerrada */
+  transition: margin-left 0.3s ease;
+  margin-left: 55px;
 }
 
 .body_content_shifted {
-  margin-left: 250px; /* Ajusta el valor según el ancho de tu barra lateral */
+  margin-left: 250px;
 }
+
+@media (max-width: 767.98px) {
+  .body_content.hidden-on-mobile {
+    display: none;
+  }
+}
+
+
+

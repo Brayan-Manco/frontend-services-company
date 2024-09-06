@@ -1,0 +1,31 @@
+.custom-bold {
+  font-weight: bold;
+}
+
+.no-border {
+  border: none;
+}
+
+
+.my-flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card-border-left {
+  border-left: 2px solid #90959b;
+  padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .my-flex-container {
+    display: block;
+  }
+
+  .card-border-left {
+    border-left: none;;
+  }
+}
+

@@ -62,13 +62,3 @@
   cursor: pointer;
 }
 
-.btn-menu {
-  top: 20px; /* Ajustar posición para el botón de menú */
-  right: 20px;
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    width: 200px; /* Ajustar ancho para pantallas más pequeñas */
-  }
-}

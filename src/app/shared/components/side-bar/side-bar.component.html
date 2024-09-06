@@ -1,4 +1,3 @@
-<!-- sidebar.component.html -->
 <div class="sidebar" [ngClass]="{'open': isSidebarOpen}">
   <div class="sidebar-content">
     <ul class="sidebar-nav">
@@ -6,7 +5,7 @@
         <a class="nav-link" (click)="toggleSidebar()">☰</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-file"></i> <span class="nav-text"> About</span></a>
+        <a class="nav-link" routerLink="/company" href="#"><i class="fas fa-file"></i> <span class="nav-text"> Empresa</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#"><i class="fas fa-cogs"></i> <span class="nav-text"> Services</span></a>
