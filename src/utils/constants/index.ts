@@ -1,6 +1,6 @@
 export const companyData = {
   id: 1,
-  name: 'Quipux S.A.S',
+  name: 'Services',
   date: '1995/05/06',
   address: 'carrera 43A No. 3 Sur-130 Ed. Milla de Oro Distrito de negocios Torre 1 Piso 12',
   city: 'Medellin - Colombia',
